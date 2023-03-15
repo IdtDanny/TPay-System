@@ -1,0 +1,320 @@
+
+// Importing Other File...
+@import 'config';
+@import 'utilities';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    scroll-behavior: smooth;   
+}
+
+.holder{
+    height: 85vh;
+    background: $primary-color;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .content{
+        // width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        .section1{
+            // width: auto;
+            h1{
+                font-family: $primary-font;
+                color: seashell;
+                padding: 15px 0px;
+            }
+            p{
+                color: $light-color;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 15px 0px;
+                font-size: 1.3rem;
+            }
+        }
+        .section2{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 50%;
+            .section-img{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                // width: 100%;
+                img{
+                    width: 70%;
+                    transform: translateY(30px);
+                    // transform: translateX(-10px);
+                }
+            }
+        }
+    }
+
+
+}
+.logo{
+    font-size: 2rem;
+    font-family: $primary-font;
+    color: seashell;
+}
+
+.logo-md{
+    font-size: 1.6rem;
+    font-family: $primary-font;
+    color: lighten($primary-color, $amount: 10);
+}
+
+// Second Holder...
+
+.holder-2{
+    // Second Container ...
+    height: 100vh;
+    background-color: $light-color;
+    .container-2{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        .explore-section{
+            display: flex;
+            // align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-family: $primary-font;
+                    color: $primary-color;
+                    font-size: 1.5rem;
+                    padding: 15px 20px;
+                }
+            }
+        }
+        .sign-in-section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-family: $primary-font;
+                color: $primary-color;
+                padding: 15px 0px;
+            }
+
+            .form-class{
+                width: 290px;
+                background: white;
+                padding: 40px 20px;
+            }
+        }
+    }
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+
+    label{
+        font-family: $primary-font;
+        font-size: 0.96rem;
+    }
+
+    .form-input-1{
+        height: 30px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $primary-color;
+    }
+    .form-input-2{
+        height: 35px;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        border: 1px solid darkgray;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.jumbotron{
+    width: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    .info-holder{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    
+        .info-desc{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                font-family: $primary-font;
+                font-size: 1.3rem;
+                font-weight: 550;
+            }
+        }
+    }
+    .form-class{
+        width: 80%;
+        padding: 20px;
+    }
+
+    &-lg{
+        width: 70%;
+    }
+}
+
+.shadow{
+    box-shadow: 0px 0px 10px 1px darkgray;
+    &-sm{
+        box-shadow: 2px 2px 5px 0px rgba(169, 169, 169, 0.4);
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.animatable{
+    position: absolute;
+    padding-right: 15px;
+    animation-name: scrolltext;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.form-modal{
+    display: none;
+}
+
+.show-form{
+    display: block;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: showForm .2s linear 1 normal both;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    // background-color: darkgreen;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // flex-direction: column;
+    thead{
+        th{
+            height: 45px;
+            background-color: $primary-color;
+            font-family: $primary-font;
+            color: $light-color;
+            text-align: left;
+            padding-left: 5px;
+            font-size: 0.9rem;
+        }
+    }
+    tbody{
+        td{
+            height: 40px;
+            font-family: $primary-font;
+            padding-left: 5px;
+            font-size: 0.83rem;
+        }
+
+        tr:nth-child(even){
+            background-color: darken($light-color, $amount: 5);
+        }
+
+    }
+
+}
+
+.notification{
+    .date{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        background-color: $secondary-color;
+    }
+    .body-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        margin-top: 5px;
+        background-color: darken($light-color, $amount: 5);
+
+        .notification-message{
+            padding: 15px;
+            width: 80%;
+        }
+        .hov{
+            padding: 15px;
+            width: 20%;
+        }
+    }
+}
+
+
+
+
+
+
+// Dashboard Menus...
+
+@import 'dashboard_menus';
+
+// Animations...
+
+@import 'animations';
+
+// Media Queries...
+
+@import 'tablet';
+
+// Error messages...
+
+@import 'error_messages';
+
+// Modal...
+
+@import 'modal';

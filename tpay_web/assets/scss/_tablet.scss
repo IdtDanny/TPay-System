@@ -1,0 +1,153 @@
+@media (max-width: 1024px) {
+    .holder{
+        height: 85vh;
+    }
+    .content{
+        justify-content: space-around;
+        align-items: center;
+        .section1{
+            width: 50%;
+            // text-align: center;
+            margin-top: 50px;
+        }
+        .section2{
+            margin-top: 50px;
+            .section-img img{
+                width: 60%;
+            }
+        }
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .jumbotron{
+        width: 100%;
+    }
+
+    .big-text{
+        font-size: 3.5rem;
+    }
+
+    .well{
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn{
+        padding: 7px 18px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .holder{
+        height: 85vh;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .section1{
+            width: 100%;
+            text-align: center;
+            margin-top: 70px;
+        }
+        .section2{
+            display: none;
+            .section-img img{
+                display: none;
+            }
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .jumbotron{
+        width: 90%;
+        margin-top: 20px;
+        padding: 35px 30px;
+    }
+    .container-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        .explore-section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            // margin-top: 50px;
+            padding: 15px 0px;
+            h1{
+                font-family: $primary-font;
+                color: $primary-color;
+                padding: 15px 0px;
+                
+            }
+
+        }
+        .sign-in-section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-family: $primary-font;
+                color: $primary-color;
+                padding: 15px 0px;
+            }
+
+            .form-class{
+                width: 300px;
+                background: white;
+                padding: 20px;
+            }
+        }
+    }
+
+    .big-text{
+        font-size: 3rem;
+    }
+
+    .well{
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn{
+        padding: 8px 18px;
+        border-radius: 20px;
+    }
+    .medium-text{
+        font-size: 1.7rem;
+    }
+    .well-sm{
+        width: 70px;
+        height: 70px;
+        h1{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 360px){
+    .container-2{
+        .sign-in-section{
+            .form-class{
+                width: 20px;
+                background: white;
+                padding: 20px;
+            }
+        }
+    }
+    .btn{
+        padding: 6px 12px;
+    }
+}

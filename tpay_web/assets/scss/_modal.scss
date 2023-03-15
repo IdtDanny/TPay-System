@@ -1,0 +1,157 @@
+.modal-content{
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.35);
+    filter: blur(10000);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .modal{
+        width: 350px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: $light-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .modal-head{
+            width: 70%;
+            height: 80px;
+            border-bottom: 2px solid $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #close-modal{
+                font-weight: bolder;
+                font-size: 1.3rem;
+                cursor: pointer;
+                position: absolute;
+                transform: translateX(145px);
+                margin-top: -30px;
+            }
+        }
+        .modal-body{
+            width: 85%;
+            padding: 20px 10px;
+            // background-color: salmon;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+// Second Modal...
+
+.modal-content2{
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.35);
+    filter: blur(10000);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .modal2{
+        width: 350px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: $light-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .modal-head{
+            width: 70%;
+            height: 80px;
+            border-bottom: 2px solid $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #close-modal2{
+                font-weight: bolder;
+                font-size: 1.3rem;
+                cursor: pointer;
+                position: absolute;
+                transform: translateX(145px);
+                margin-top: -30px;
+            }
+        }
+        .modal-body{
+            width: 85%;
+            padding: 20px 10px;
+            // background-color: salmon;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+// Third Modal...
+
+.modal-content3{
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.35);
+    filter: blur(10000);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .modal3{
+        width: 350px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: $light-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .modal-head{
+            width: 70%;
+            height: 80px;
+            border-bottom: 2px solid $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #close-modal3{
+                font-weight: bolder;
+                font-size: 1.3rem;
+                cursor: pointer;
+                position: absolute;
+                transform: translateX(145px);
+                margin-top: -30px;
+            }
+        }
+        .modal-body{
+            width: 85%;
+            padding: 20px 10px;
+            // background-color: salmon;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.opening-modal{
+    animation: showModal .2s linear 1 normal both;
+}
+.closing-modal{
+    animation: closeModal .2s linear 1 normal both;
+}

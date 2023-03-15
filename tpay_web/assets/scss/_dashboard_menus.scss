@@ -1,0 +1,104 @@
+.dashboard-nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav-links{
+            position: absolute;
+            height: 60vh;
+            list-style: none;
+            width: 300px;
+            right: 0;
+            top: 10vh;
+            transition: opacity 0.5s ease-in;
+            display: none;
+            // opacity: 0.3;
+            background-color: #120033;
+            padding-top: 50px;
+            z-index: 100;
+
+            a{
+                color: $light-color;
+                text-decoration: none;
+                letter-spacing: 3px;
+                font-family: $primary-font;
+                // font-weight: bold;
+                font-size: 14px;
+                display: flex;
+                justify-content: first baseline;
+                align-items: center;
+
+                i{
+                    color: lighten($primary-color, $amount: 5);
+                }
+
+                &:hover{
+                    color: lighten($primary-color, $amount: 5);
+                }
+
+            }
+            
+
+            li{
+                opacity: 0;
+                height: 50px;
+                margin: 5px;
+                margin-left: 50px;
+            }
+
+        }
+        .nav-active{
+            transform: translateX(0%);
+            opacity: 1;
+            // width: 100%;
+            display: block;
+        }
+
+        .burger{
+            display: block;
+            cursor: pointer;
+            
+        }
+        .burger div{
+            width: 30px;
+            height: 3px;
+            background-color: rgb(266, 266, 266);
+            margin: 5px;
+            transition: all 0.5s ease;
+        }
+    }
+    
+    
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    
+
+}

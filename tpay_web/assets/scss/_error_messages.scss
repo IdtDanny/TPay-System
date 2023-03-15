@@ -1,0 +1,57 @@
+
+#error-holder{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .error{
+        padding: 4px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 250px;
+        height: 40px;
+        margin-top: 44px;
+        right: 20px;
+        background-color: rgb(247, 96, 76);
+        color: ivory;
+        animation: showError .5s linear  1 normal both;
+        
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+        }
+        #close-btn{
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+    .success{
+        padding: 4px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 250px;
+        height: 40px;
+        margin-top: 44px;
+        right: 20px;
+        background-color: rgb(50, 182, 90);
+        color: ivory;
+        animation: showError .5s linear  1 normal both;
+        
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+        }
+        #close-btn{
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}

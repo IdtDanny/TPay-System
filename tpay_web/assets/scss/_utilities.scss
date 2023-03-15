@@ -1,0 +1,224 @@
+
+$spaces: (1,2,3,4,5);
+
+@each $space in $spaces {
+    .mt-#{$space}{
+        margin-top: #{$space}rem;
+    }
+    .ml-#{$space}{
+        margin-left: #{$space}rem;
+    }
+    .mr-#{$space}{
+        margin-right: #{$space}rem;
+    }
+}
+
+.bg{
+    &-dark{
+        background-color: #120033;
+    }
+    &-primary{
+        background-color: $primary-color;
+    }
+    &-light{
+        background-color: $light-color;
+    }
+    &-white{
+        background-color: white;
+    }
+    &-secondary{
+        background-color:$secondary-color;
+    }
+    &-darken-light{
+        background-color:darken($light-color, $amount: 5);
+    }
+    
+}
+.big-text{
+    font-size: 5rem;
+}
+.medium-text{
+    font-size: 2.8rem;
+}
+.text{
+    &-center{
+        text-align: center;
+    }
+    &-primary{
+        color: $primary-color;
+    }
+    &-light{
+        color: $light-color;
+    }
+    &-dark{
+        color: #00001a;
+    }
+    &-danger{
+        color: #d11a2c;
+    }
+    &-secondary{
+        color: $secondary-color;
+    }
+    &-info{
+        color: $info-color;
+    }
+}
+
+.muted{
+    font-family: $primary-font;
+    color: darken($color: darkgray, $amount: 5);
+    font-size: 0.8rem;
+}
+
+
+.well{
+    // padding: 25px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.well-sm{
+    // padding: 25px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 10px 22px;
+    text-decoration: none;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+
+    &-sm{
+        padding: 6px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    &-light{
+        background-color: $light-color;
+        border: 2px solid $light-color;
+        color: $primary-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        &:hover{
+            border: 2px solid $light-color;
+            color: $light-color;
+            background: transparent;
+        }
+    }
+    &-outline-light{
+        background: transparent;
+        border: 2px solid $light-color;
+        color: $light-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        &:hover{
+            border: 2px solid $light-color;
+            color: $primary-color;
+            background-color: $light-color;
+        }
+    }
+    &-primary{
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+        color: $light-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        &:hover{
+            border: 2px solid $primary-color;
+            color: $primary-color;
+            background: transparent;
+        }
+    }
+    &-secondary{
+        background-color: $secondary-color;
+        border: 2px solid $secondary-color;
+        color: $light-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        &:hover{
+            border: 2px solid $secondary-color;
+            color: $secondary-color;
+            background: transparent;
+        }
+    }
+    &-dark{
+        background-color: $dark-color;
+        border: 2px solid $dark-color;
+        color: $light-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        &:hover{
+            border: 2px solid $dark-color;
+            color: $dark-color;
+            background: transparent;
+        }
+    }
+    &-info{
+        background-color: $info-color;
+        border: 2px solid $info-color;
+        color: $dark-color;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        &:hover{
+            border: 2px solid $info-color;
+            color: $info-color;
+            background: transparent;
+        }
+    }
+    
+    &-rounded{
+        border-radius: 25px;
+    }
+    &-block{
+        width: 150px;
+    }
+    &-delete{
+        padding: 10px 13px;
+        color: $light-color;
+        background-color: #d11a2c;
+        border-bottom: 5px solid #850d19;
+        transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+    &-delete:hover{
+        background-color: #850d19;
+        border-bottom: 5px solid #d11a2c;
+    }
+}
+
+.display-1{
+    font-size: 1.1rem;
+    font-family: $primary-font;
+}
+
+.badge{
+    padding: 10px;
+
+    &-img-head{
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            // outline : 6px solid white;
+            border : 8px solid opacify($secondary-color, $amount: 1);
+            box-shadow: 2px 2px 5px 0px rgba(169, 169, 169, 0.9);
+        }
+    }
+    &-body{
+        font-size: 1.1rem;
+        font-family: $primary-font;
+    }
+}
+

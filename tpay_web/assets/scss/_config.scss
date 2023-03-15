@@ -1,0 +1,18 @@
+// Setting Colors...
+
+$primary-color: #2196f3;
+$light-color: #f5f5f5;
+$secondary-color: #07ac82;
+$info-color: rgb(233, 154, 6);
+$dark-color: #00001a;
+
+// Setting Fonts...
+
+@font-face{
+    font-family: 'Avant Garde';
+    src: url('../fonts/Avant_Garde_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary-font: 'Avant Garde';
